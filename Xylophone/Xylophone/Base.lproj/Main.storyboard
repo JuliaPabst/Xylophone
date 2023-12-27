@@ -1,24 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xylophone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="S8P-Wl-1PT">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyl-qv-bPJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="104"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsF-Pe-nvh">
+                                                <rect key="frame" x="2" y="0.0" width="389" height="104"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="C">
+                                                    <backgroundConfiguration key="background" strokeWidth="50">
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OsF-Pe-nvh" secondAttribute="trailing" constant="2" id="2vn-Ul-8NB"/>
+                                            <constraint firstAttribute="bottom" secondItem="OsF-Pe-nvh" secondAttribute="bottom" id="5JW-AL-f3X"/>
+                                            <constraint firstItem="OsF-Pe-nvh" firstAttribute="top" secondItem="wyl-qv-bPJ" secondAttribute="top" id="AM2-Ct-98Q"/>
+                                            <constraint firstItem="OsF-Pe-nvh" firstAttribute="leading" secondItem="wyl-qv-bPJ" secondAttribute="leading" constant="2" id="EOn-jd-Fxf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-Pg-fLV">
+                                        <rect key="frame" x="0.0" y="109" width="393" height="104.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uV-Dy-zrm">
+                                                <rect key="frame" x="5" y="0.0" width="383" height="104.33333333333333"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="D">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3uV-Dy-zrm" secondAttribute="trailing" constant="5" id="8Vo-fq-AJ2"/>
+                                            <constraint firstItem="3uV-Dy-zrm" firstAttribute="top" secondItem="QZa-Pg-fLV" secondAttribute="top" id="B0n-Zp-b6Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="3uV-Dy-zrm" secondAttribute="bottom" id="U3V-EX-Awo"/>
+                                            <constraint firstItem="3uV-Dy-zrm" firstAttribute="leading" secondItem="QZa-Pg-fLV" secondAttribute="leading" constant="5" id="ep4-j4-42c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYW-LP-3PB">
+                                        <rect key="frame" x="0.0" y="218.33333333333331" width="393" height="104"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md3-zE-qi2">
+                                                <rect key="frame" x="10" y="0.0" width="373" height="104"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="E">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Md3-zE-qi2" secondAttribute="trailing" constant="10" id="1c8-6J-vWn"/>
+                                            <constraint firstItem="Md3-zE-qi2" firstAttribute="leading" secondItem="yYW-LP-3PB" secondAttribute="leading" constant="10" id="NxY-JC-5Ei"/>
+                                            <constraint firstAttribute="trailing" secondItem="Md3-zE-qi2" secondAttribute="trailing" constant="10" id="RM9-WM-1Oa"/>
+                                            <constraint firstAttribute="bottom" secondItem="Md3-zE-qi2" secondAttribute="bottom" id="Xog-rE-jrZ"/>
+                                            <constraint firstItem="Md3-zE-qi2" firstAttribute="top" secondItem="yYW-LP-3PB" secondAttribute="top" id="pdy-Wn-dZI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-pJ-5iA">
+                                        <rect key="frame" x="0.0" y="327.33333333333331" width="393" height="104.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8g-2l-UOk">
+                                                <rect key="frame" x="15" y="0.0" width="363" height="104.33333333333333"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="F">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="N8g-2l-UOk" firstAttribute="top" secondItem="EPo-pJ-5iA" secondAttribute="top" id="6pC-K0-J99"/>
+                                            <constraint firstItem="N8g-2l-UOk" firstAttribute="leading" secondItem="EPo-pJ-5iA" secondAttribute="leading" constant="15" id="STq-c3-EJ3"/>
+                                            <constraint firstAttribute="trailing" secondItem="N8g-2l-UOk" secondAttribute="trailing" constant="15" id="Yfx-EU-8C6"/>
+                                            <constraint firstAttribute="bottom" secondItem="N8g-2l-UOk" secondAttribute="bottom" id="v4z-is-n2s"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vn-un-jFF">
+                                        <rect key="frame" x="0.0" y="436.66666666666669" width="393" height="104.00000000000006"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyR-Jn-a7a">
+                                                <rect key="frame" x="20" y="0.0" width="353" height="104"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="G">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="EyR-Jn-a7a" secondAttribute="trailing" constant="20" id="5Co-7p-wDY"/>
+                                            <constraint firstAttribute="bottom" secondItem="EyR-Jn-a7a" secondAttribute="bottom" id="8Dy-8M-uRD"/>
+                                            <constraint firstItem="EyR-Jn-a7a" firstAttribute="top" secondItem="4Vn-un-jFF" secondAttribute="top" id="ywJ-WA-QIS"/>
+                                            <constraint firstItem="EyR-Jn-a7a" firstAttribute="leading" secondItem="4Vn-un-jFF" secondAttribute="leading" constant="20" id="zvB-Cx-dab"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-Vg-NK5">
+                                        <rect key="frame" x="0.0" y="545.66666666666663" width="393" height="104.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyK-Rs-Y6q">
+                                                <rect key="frame" x="25" y="0.0" width="343" height="104.33333333333333"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="pyK-Rs-Y6q" firstAttribute="leading" secondItem="LNv-Vg-NK5" secondAttribute="leading" constant="25" id="HFF-S3-qbP"/>
+                                            <constraint firstAttribute="trailing" secondItem="pyK-Rs-Y6q" secondAttribute="trailing" constant="25" id="UVQ-v8-Dxr"/>
+                                            <constraint firstItem="pyK-Rs-Y6q" firstAttribute="top" secondItem="LNv-Vg-NK5" secondAttribute="top" id="y1d-YQ-o44"/>
+                                            <constraint firstAttribute="bottom" secondItem="pyK-Rs-Y6q" secondAttribute="bottom" id="zSR-lt-8W8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lub-lZ-ejt">
+                                        <rect key="frame" x="0.0" y="655" width="393" height="104"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntb-F3-A67">
+                                                <rect key="frame" x="30" y="0.0" width="333" height="104"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ntb-F3-A67" secondAttribute="trailing" constant="30" id="1l2-Wm-87T"/>
+                                            <constraint firstItem="Ntb-F3-A67" firstAttribute="top" secondItem="Lub-lZ-ejt" secondAttribute="top" id="Fgd-6Q-hnj"/>
+                                            <constraint firstItem="Ntb-F3-A67" firstAttribute="leading" secondItem="Lub-lZ-ejt" secondAttribute="leading" constant="30" id="cIB-sc-ddH"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ntb-F3-A67" secondAttribute="bottom" id="gie-bH-bBE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S8P-Wl-1PT" secondAttribute="trailing" id="03J-7B-SSI"/>
+                            <constraint firstItem="S8P-Wl-1PT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="M77-WQ-kfL"/>
+                            <constraint firstItem="S8P-Wl-1PT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SH9-kK-tba"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S8P-Wl-1PT" secondAttribute="bottom" id="ZGb-6q-3yO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
